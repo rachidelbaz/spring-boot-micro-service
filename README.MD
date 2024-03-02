@@ -24,3 +24,4 @@
     <p>Des DTOs (Data Transfer Objects) ont été créés pour transférer des données entre les couches du micro-service. Des mappers ont été utilisés pour convertir les entités JPA en DTOs et vice versa.</p>
 <h4>10. Création de la Couche Service (Métier) du Micro-service :</h4>
     <p>La couche service métier a été créée pour encapsuler la logique métier du micro-service. Cela garantit que la logique métier est séparée de la couche de persistance des données et peut être testée de manière indépendante.</p>
+<img src="captures/graphQL.png">
