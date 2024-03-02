@@ -40,7 +40,7 @@ public class RestAccountController {
         return accountService.addAccount(requestDTO);
     }
     @PutMapping("/BankAccounts/{id}")
-    public BankAccount bankAccounts(@PathVariable String id, @RequestBody BankAccount bankAccount){
+    public BankAccount update(@PathVariable String id, @RequestBody BankAccount bankAccount){
         BankAccount ba=bankAccountRepository.findById(id)
                 .orElseThrow(()->new RuntimeException(String.format("Account %s not found",id)));
         if(bankAccount.getBalance()!=null)ba.setBalance(bankAccount.getBalance());
